@@ -1,0 +1,19 @@
+
+spring:
+  application:
+    name: order
+  datasource:
+    url: jdbc:mysql://localhost:3306/microService
+    username: root
+    password: root123456
+  eureka:
+    client:
+      service-url:
+        defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8083
+
+stripe:
+  secret-key: sk_test_51Q6XWQKD7xEKEswAFzV3AOOAzaEQJ3qWu8OxLMAd2WGWATehoWzTMAoLhNR6GQwvdyNbNBJWPtaTrd2uYDaL6B1o00YoDZsilJ
+  public-key: pk_test_51Q6XWQKD7xEKEswAieTpHB683siSWLdEycgHyZgKqVqHC7RYHUOmf39w1s0OqwHGOQS36GsytMGrllo1rDbZzRi500UorAz8ZZ
+  webhook: whsec_7d02362e8f5a837ad9b1bf70679f62ccc5183f7bbfa9440fa44fc9b49f23905a
