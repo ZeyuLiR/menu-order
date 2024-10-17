@@ -94,7 +94,6 @@ public class OrderController {
         } catch (JsonSyntaxException | SignatureVerificationException e) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Invalid payload");
         }
-
         // Handle the event
         switch (event.getType()) {
             case "payment_intent.succeeded":
@@ -110,8 +109,6 @@ public class OrderController {
                     }
                 }
                 break;
-
-
             default:
                 System.out.println("Unhandled event type: {}");
                 break;
